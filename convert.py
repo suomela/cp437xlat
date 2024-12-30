@@ -21,6 +21,12 @@ def main():
             unicode = chr(int(unicode, base=0))
             assert cp437 == len(xlat)
             xlat.append(unicode)
+
+    print('/// CP437 translation table.')
+    print('///')
+    print('/// Generated from:')
+    print('/// - source: <https://unicode.org/Public/MAPPINGS/VENDORS/MICSFT/PC/CP437.TXT>')
+    print('/// - license: <https://www.unicode.org/license.txt>')
     print('pub const CP437: [char; 256] = [')
     start = '   '
     buf = None
